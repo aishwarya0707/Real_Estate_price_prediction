@@ -7,7 +7,7 @@ head(df, 10)
 df <- df[,-c(1,2)]
 head(df, 10)
 
-# splitting data into tarin and test set
+# splitting data into train and test set
 library(caTools)
 set.seed(123)
 split <- sample.split(Y = df$Y.house.price.of.unit.area, SplitRatio = 0.8)
